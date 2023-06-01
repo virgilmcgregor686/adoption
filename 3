@@ -1,0 +1,13 @@
+double CalculateAverage(double[] numbers) {
+    double sum = 0;
+
+    for (int i = 0; i < numbers.Length; i++) {
+        sum += numbers[i];
+    }
+
+    return sum / numbers.Length;
+}
+
+double[] numbers = { 1.5, 2.5, 3.5, 4.5, 5.5 };
+double average = CalculateAverage(numbers);
+Console.WriteLine(average);
